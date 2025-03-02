@@ -69,3 +69,15 @@ docker-compose up
 {
   "response": "string"
 }
+```
+## Challenges Faced
+
+### LLM Selection  
+- Most Hugging Face models required both a question and context, making them unsuitable.  
+- Tested multiple models, including **FLAN-T5, BlenderBot-400M-Distill, and BlenderBot-3B**, but they didn't provide satisfactory responses.  
+- After further research, **Cohere’s LLM** was selected for its superior performance in handling standalone questions.  
+
+### Dockerization  
+- Configuring `docker-compose.yml` to efficiently run both **FastAPI (backend)** and **Streamlit (frontend)** together.  
+- Ensured smooth container communication and simplified local deployment.  
+
