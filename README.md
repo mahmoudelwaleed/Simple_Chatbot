@@ -14,14 +14,14 @@ This project implements a simple chatbot using Cohere's LLM API with a FastAPI b
 │   ├── Dockerfile       # Docker configuration for frontend
 │   └── requirements.txt # Python dependencies for frontend
 ├── docker-compose.yml   # Docker Compose configuration for orchestration
-└── README.md            # Project documentation
+└── README.md            # Project documentation
 ```
 
 ## Features
-- *Backend API:* FastAPI service handling user queries and communicating with Cohere's LLM API
-- *Frontend UI:* Streamlit interface allowing users to interact with the chatbot
-- *Conversation History:* Maintains chat history for context
-- *Docker Integration:* Containerized for consistent deployment across environments
+- **Backend API:** FastAPI service handling user queries and communicating with Cohere's LLM API
+- **Frontend UI:** Streamlit interface allowing users to interact with the chatbot
+- **Conversation History:** Maintains chat history for context
+- **Docker Integration:** Containerized for consistent deployment across environments
 
 ## Prerequisites
 - Docker and Docker Compose installed
@@ -30,25 +30,24 @@ This project implements a simple chatbot using Cohere's LLM API with a FastAPI b
 ## Setup Instructions
 
 ### Clone the repository:
-bash
-git clone https://github.com/yourusername/Simple_Chatbot.git
-
+```bash
+git clone https://github.com/Amr-Abdelaty-fathalla/Simple_Chatbot.git
 cd Simple_Chatbot
+```
 
-
-### Create a .env file in the BackEnd directory with your Cohere API key:
-env
+### Create a `.env` file in the `BackEnd` directory with your Cohere API key:
+```env
 COHERE_API_KEY=your_cohere_api_key_here
-
+```
 
 ### Build and run the containers:
-bash
-docker-compose up -d
-
+```bash
+docker-compose up 
+```
 
 ## Access the application:
-- *Frontend:* [http://localhost:8501](http://localhost:8501)
-- *Backend API:* [http://localhost:9999](http://localhost:9999)
+- **Frontend:** [http://localhost:8501](http://localhost:8501)
+- **Backend API:** [http://localhost:9999](http://localhost:9999)
 
 ## Usage
 1. Open your browser and navigate to [http://localhost:8501](http://localhost:8501)
@@ -57,16 +56,16 @@ docker-compose up -d
 4. Your conversation history will be displayed in the chat interface
 
 ## API Endpoints
-### *POST* /chat/ - Send a message to the chatbot
-#### *Request body:*
-json
+### **POST** `/chat/` - Send a message to the chatbot
+#### **Request body:**
+```json
 {
   "user_id": "string",
   "message": "string"
 }
-
-#### *Response:*
+```
+#### **Response:**
 ```json
 {
-  "response": "string"
+  "response": "string"
 }
