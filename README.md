@@ -3,7 +3,7 @@
 This project implements a simple chatbot using Cohere's LLM API with a FastAPI backend and Streamlit frontend, all containerized with Docker for easy deployment.
 
 ## Project Structure
-
+```
 ├── BackEnd/
 │   ├── Backend.py       # FastAPI application that connects to Cohere's API
 │   ├── Dockerfile       # Docker configuration for backend
@@ -14,8 +14,8 @@ This project implements a simple chatbot using Cohere's LLM API with a FastAPI b
 │   ├── Dockerfile       # Docker configuration for frontend
 │   └── requirements.txt # Python dependencies for frontend
 ├── docker-compose.yml   # Docker Compose configuration for orchestration
-└── README.md            # Project documentation
-
+└── README.md            # Project documentation
+```
 
 ## Features
 - *Backend API:* FastAPI service handling user queries and communicating with Cohere's LLM API
@@ -32,6 +32,7 @@ This project implements a simple chatbot using Cohere's LLM API with a FastAPI b
 ### Clone the repository:
 bash
 git clone https://github.com/yourusername/Simple_Chatbot.git
+
 cd Simple_Chatbot
 
 
