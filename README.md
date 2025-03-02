@@ -31,8 +31,8 @@ This project implements a simple chatbot using Cohere's LLM API with a FastAPI b
 
 ### Clone the repository:
 bash
-git clone https://github.com/yourusername/containerized-llm-app.git
-cd containerized-llm-app
+git clone https://github.com/yourusername/Simple_Chatbot.git
+cd Simple_Chatbot
 
 
 ### Create a .env file in the BackEnd directory with your Cohere API key:
